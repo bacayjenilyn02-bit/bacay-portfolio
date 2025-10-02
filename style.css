@@ -1,0 +1,198 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+  background: linear-gradient(135deg, #0a0a0a, #1a1a1a, #111);
+  color: #fff;
+  display: flex;
+}
+
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 22rem;
+  background: rgba(0, 0, 0, 0.8);
+  border-right: 1px solid rgba(155, 89, 182, 0.3);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 2rem;
+}
+
+.logo {
+  font-size: 2.6rem;
+  font-weight: 700;
+  margin-bottom: 4rem;
+  color: #9b59b6;
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+nav a {
+  font-size: 1.8rem;
+  color: #fff;
+  font-weight: 500;
+  transition: 0.3s ease;
+  padding: 0.8rem 1rem;
+  border-radius: 0.5rem;
+}
+
+nav a:hover,
+nav a.active {
+  background: #9b59b6;
+  color: #000;
+}
+
+
+section {
+  min-height: 100vh;
+  padding: 8rem 5% 5rem 28rem; 
+}
+
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6rem;
+  flex-wrap: wrap;
+}
+
+.home .home-content h1 {
+  font-size: 4.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.home .home-content h3 {
+  font-size: 2.5rem;
+  margin: 1rem 0;
+  color: #ccc;
+}
+
+span {
+  color: #9b59b6;
+}
+
+
+.btn {
+  display: inline-block;
+  padding: 1rem 3rem;
+  margin-top: 2rem;
+  background: transparent;
+  border-radius: 3rem;
+  font-size: 1.6rem;
+  color: #9b59b6;
+  font-weight: 600;
+  border: 2px solid #9b59b6;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #9b59b6;
+  color: #000;
+}
+
+.home-img img {
+  width: 260px;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #9b59b6;
+  transition: 0.3s ease;
+}
+
+.home-img img:hover {
+  transform: scale(1.05) rotate(3deg);
+}
+
+.hobbies {
+  text-align: center;
+}
+
+.hobbies h2 {
+  font-size: 4rem;
+  margin-bottom: 3rem;
+}
+
+.hobbies h3 {
+  font-size: 2.2rem;
+  margin: 2rem 0 1rem;
+  color: #d8b9ff;
+}
+
+.hobbies img {
+  width: 280px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 1.2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  transition: 0.3s ease;
+}
+
+.hobbies img:hover {
+  transform: scale(1.05);
+}
+
+
+.contact {
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: 4rem;
+  margin-bottom: 2rem;
+}
+
+.contact p {
+  font-size: 1.8rem;
+  margin-bottom: 3rem;
+  color: #ccc;
+}
+
+
+@media (max-width: 768px) {
+  header {
+    width: 100%;
+    height: auto;
+    position: relative;
+    flex-direction: row;
+    padding: 1rem;
+    border-right: none;
+    border-bottom: 1px solid rgba(155, 89, 182, 0.3);
+  }
+
+  nav {
+    flex-direction: row;
+    gap: 1.5rem;
+  }
+
+  section {
+    padding: 10rem 5% 5rem;
+  }
+}
